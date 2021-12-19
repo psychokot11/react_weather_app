@@ -1,0 +1,11 @@
+.Footer {
+  display: block;
+  margin: 0 auto;
+  max-width: 800px;
+  padding-top: 15px;
+}
+
+.Footer a {
+  text-decoration: none;
+  color: var(--links-color);
+}
