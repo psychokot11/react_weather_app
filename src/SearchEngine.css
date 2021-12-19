@@ -40,6 +40,10 @@
   font-size: 14px;
 }
 
+.city {
+  text-transform: capitalize;
+}
+
 .date {
   color: var(--first-font-color);
 }

@@ -7,7 +7,7 @@ export default function Footer() {
       <footer>
         <a
           href="https://github.com/psychokot11/react_weather_app"
-          class="openSourceFooterLink"
+          className="openSourceFooterLink"
           target="_blank"
           rel="noreferrer"
         >
