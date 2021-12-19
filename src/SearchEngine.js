@@ -1,5 +1,12 @@
 import React from "react";
+import "./SearchEngine.css";
 
 export default function SearchEngine() {
-  return "Hello from Search Engine";
+  return (
+    <div className="SearchEngine">
+      <form>
+        <input type="search" placeholder="enter the city" autocomplete="off" />
+      </form>
+    </div>
+  );
 }

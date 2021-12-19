@@ -1,0 +1,16 @@
+.SearchEngine input {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 80%;
+  text-align: center;
+  font-size: 24px;
+  border: 1px solid #acaaaa8c;
+  border-radius: 10px;
+  font-family: "Julius Sans One", sans-serif;
+}
+
+::placeholder {
+  color: var(--primary-font-color);
+}
