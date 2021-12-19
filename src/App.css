@@ -1,0 +1,27 @@
+:root {
+  --primary-font-color: #acaaaa;
+  --font-color: black;
+  --first-font-color: #acc6aa;
+  --second--font-color: #71a0a5;
+  --accent-font-color: rgb(243, 100, 81);
+  --links-color: #77628c;
+}
+
+.App {
+  margin: 5% auto;
+  font-family: "Julius Sans One", sans-serif;
+}
+
+.App-body {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 26px 15px;
+  border: 1px solid #acc6aa71;
+  border-inline-color: #71a0a577;
+  border-radius: 15px;
+}
+
+.App hr {
+  max-width: 80%;
+  margin: 20px auto;
+}

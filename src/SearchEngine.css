@@ -1,0 +1,5 @@
+import React from "react";
+
+export default funcrion SearchEngine () {
+    return "Hello from Search Engine"
+}
