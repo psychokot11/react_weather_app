@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Date from "./Date";
 import "./SearchEngine.css";
 
 export default function SearchEngine() {
@@ -28,6 +29,7 @@ export default function SearchEngine() {
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=${key}&units=metric`;
     axios.get(url).then(displayWeather);
   }
+
   let conditions = (
     <div>
       <h3 className="humidity">Humidity: {weather.humidity}%</h3>
@@ -55,6 +57,37 @@ export default function SearchEngine() {
     </h2>
   );
 
+  let defaultForm = (
+    <div className="SearchEngine">
+      <form onSubmit={handleSubmit}>
+        <input
+          type="search"
+          placeholder="enter the city"
+          autoComplete="off"
+          onChange={searchCity}
+        />
+      </form>
+      <div className="row">
+        <div className="col-md-6 left-column">
+          <p>
+            <img
+              src={require("./images/dummy.png")}
+              alt="weather icon"
+              className="icon"
+            ></img>
+          </p>
+          <div>
+            <h1 className="city">Search for the city</h1>
+            <h3 className="date">
+              <Date />
+            </h3>
+          </div>
+        </div>
+        <div className="col-md-6 right-column"></div>
+      </div>
+    </div>
+  );
+
   let form = (
     <div className="SearchEngine">
       <form onSubmit={handleSubmit}>
@@ -75,8 +108,10 @@ export default function SearchEngine() {
             ></img>
           </p>
           <div>
-            <h1 className="city">{updateCity()}</h1>
-            <h3 className="date">Saturday 11:11</h3>
+            <h1 className="city">{city}</h1>
+            <h3 className="date">
+              <Date />
+            </h3>
             <div>{conditions}</div>
           </div>
         </div>
@@ -84,13 +119,10 @@ export default function SearchEngine() {
       </div>
     </div>
   );
-  function updateCity() {
-    if (city) {
-      return city;
-    } else {
-      return "Oslo";
-    }
-  }
 
-  return form;
+  if (city) {
+    return form;
+  } else {
+    return <div>{defaultForm}</div>;
+  }
 }
