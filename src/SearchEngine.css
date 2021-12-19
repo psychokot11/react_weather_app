@@ -1,3 +1,12 @@
+:root {
+  --primary-font-color: #acaaaa;
+  --font-color: black;
+  --first-font-color: #acc6aa;
+  --second--font-color: #71a0a5;
+  --accent-font-color: rgb(243, 100, 81);
+  --links-color: #77628c;
+}
+
 .SearchEngine input {
   display: block;
   margin: 0 auto;
@@ -13,4 +22,55 @@
 
 ::placeholder {
   color: var(--primary-font-color);
+}
+
+.left-column {
+  text-align: right;
+}
+
+.icon {
+  max-width: 20%;
+}
+
+.SearchEngine h1 {
+  font-size: 24px;
+}
+
+.SearchEngine h3 {
+  font-size: 14px;
+}
+
+.date {
+  color: var(--first-font-color);
+}
+
+.humidity {
+  color: var(--second--font-color);
+}
+
+.wind {
+  color: var(--second--font-color);
+}
+
+.description {
+  color: var(--accent-font-color);
+}
+
+.Temperature {
+  font-size: 120px;
+  color: var(--primary-font-color);
+  position: relative;
+  top: 40px;
+}
+
+.Temperature span {
+  font-size: 30px;
+  position: relative;
+  bottom: 60px;
+}
+
+.Temperature .Celcius,
+.Farenheit {
+  color: var(--links-color);
+  text-decoration: none;
 }
