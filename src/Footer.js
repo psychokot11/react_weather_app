@@ -6,7 +6,7 @@ export default function Footer() {
     <div className="Footer">
       <footer>
         <a
-          href="https://github.com/psychokot11/SheCodesPlus_final"
+          href="https://github.com/psychokot11/react_weather_app"
           class="openSourceFooterLink"
           target="_blank"
           rel="noreferrer"
