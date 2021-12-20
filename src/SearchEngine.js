@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
-import Date from "./Date";
+import CurrentDate from "./CurrentDate";
+import Default from "./Default";
 import "./SearchEngine.css";
 
 export default function SearchEngine() {
@@ -76,15 +77,10 @@ export default function SearchEngine() {
               className="icon"
             ></img>
           </p>
-          <div>
-            <h1 className="city">Search for the city</h1>
-            <h3 className="date">
-              <Date />
-            </h3>
-          </div>
+          <Default />;
         </div>
-        <div className="col-md-6 right-column"></div>
       </div>
+      <div className="col-md-6 right-column">{temperature}</div>
     </div>
   );
 
@@ -110,7 +106,7 @@ export default function SearchEngine() {
           <div>
             <h1 className="city">{city}</h1>
             <h3 className="date">
-              <Date />
+              <CurrentDate />
             </h3>
             <div>{conditions}</div>
           </div>
