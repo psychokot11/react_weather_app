@@ -23,8 +23,8 @@ export default function CurrentDate() {
 
   let time = " " + `${hour}:${minutes}`;
   return (
-    <div>
+    <h3 className="date">
       {today} {time}
-    </div>
+    </h3>
   );
 }
