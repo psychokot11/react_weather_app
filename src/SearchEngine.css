@@ -1,10 +1,11 @@
 :root {
   --primary-font-color: #acaaaa;
-  --font-color: black;
-  --first-font-color: #acc6aa;
+  --font-color: rgb(34, 234, 248);
+  --first-font-color: #88c484;
   --second--font-color: #71a0a5;
   --accent-font-color: rgb(243, 100, 81);
   --links-color: #77628c;
+  --background: rgba(253, 232, 229, 0.404);
 }
 
 .SearchEngine input {
@@ -18,6 +19,7 @@
   border: 1px solid #acaaaa8c;
   border-radius: 10px;
   font-family: "Julius Sans One", sans-serif;
+  background-color: var(--background);
 }
 
 ::placeholder {
@@ -29,7 +31,7 @@
 }
 
 .icon {
-  max-width: 20%;
+  max-width: 15%;
 }
 
 .SearchEngine h1 {
@@ -42,6 +44,7 @@
 
 .city {
   text-transform: capitalize;
+  color: var(--font-color);
 }
 
 .date {
@@ -61,10 +64,10 @@
 }
 
 .Temperature {
-  font-size: 120px;
+  font-size: 150px;
   color: var(--primary-font-color);
   position: relative;
-  top: 40px;
+  top: -3px;
 }
 
 .Temperature span {
