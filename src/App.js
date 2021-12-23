@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <div className="App-body">
-        <SearchEngine />
+        <SearchEngine city="Oslo" />
         <hr />
       </div>
       <Footer />
