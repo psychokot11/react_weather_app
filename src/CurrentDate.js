@@ -21,7 +21,7 @@ export default function CurrentDate() {
     minutes = `0${date.getMinutes()}`;
   }
 
-  let time = " " + `${hour}:${minutes}`;
+  let time = `${hour}:${minutes}`;
   return (
     <h3 className="date">
       {today} {time}
