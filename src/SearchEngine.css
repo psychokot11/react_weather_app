@@ -71,9 +71,9 @@
 }
 
 .Temperature span {
-  font-size: 40px;
+  font-size: 35px;
   position: relative;
-  bottom: 60px;
+  bottom: 70px;
 }
 
 .Temperature .Celcius,
