@@ -5,7 +5,7 @@
   --second--font-color: #71a0a5;
   --accent-font-color: rgb(243, 100, 81);
   --links-color: #77628c;
-  --background: rgba(253, 232, 229, 0.404);
+  --background: rgba(223, 223, 223, 0.11);
 }
 
 .SearchEngine input {
@@ -17,7 +17,7 @@
   text-align: center;
   font-size: 24px;
   border: 1px solid #acaaaa8c;
-  border-radius: 10px;
+  border-radius: 4px;
   font-family: "Julius Sans One", sans-serif;
   background-color: var(--background);
 }
@@ -71,7 +71,7 @@
 }
 
 .Temperature span {
-  font-size: 30px;
+  font-size: 40px;
   position: relative;
   bottom: 60px;
 }
@@ -80,4 +80,9 @@
 .Farenheit {
   color: var(--links-color);
   text-decoration: none;
+}
+
+.Celcius:hover,
+.Farenheit:hover {
+  color: var(--links-color);
 }
