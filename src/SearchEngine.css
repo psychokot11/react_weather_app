@@ -86,3 +86,8 @@
 .Farenheit:hover {
   color: var(--links-color);
 }
+
+hr {
+  max-width: 80%;
+  margin: 20px auto 10px;
+}

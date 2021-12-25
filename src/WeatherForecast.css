@@ -1,0 +1,32 @@
+:root {
+  --primary-font-color: #acaaaa;
+  --font-color: rgb(34, 234, 248);
+  --first-font-color: #88c484;
+  --second--font-color: #71a0a5;
+  --accent-font-color: rgb(243, 100, 81);
+  --links-color: #77628c;
+  --background: rgba(223, 223, 223, 0.11);
+}
+
+.WeatherForecast {
+  text-align: center;
+  padding: 0 30px;
+}
+
+.forecast-icon {
+  max-width: 40px;
+}
+
+.one-day {
+  padding: 0 5px;
+  margin-bottom: 15px;
+}
+
+.dailyForecast {
+  color: var(--links-color);
+}
+
+.min-temp {
+  opacity: 0.5;
+  margin-left: 5px;
+}

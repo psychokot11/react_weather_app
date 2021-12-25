@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import WeatherData from "./WeatherData";
+import WeatherForecast from "./WeatherForecast";
 import "./SearchEngine.css";
 
 export default function SearchEngine(props) {
@@ -15,6 +16,7 @@ export default function SearchEngine(props) {
       wind: Math.round(response.data.wind.speed),
       description: response.data.weather[0].description,
       temperature: Math.round(response.data.main.temp),
+      coordinates: response.data.coord,
     });
   }
 
@@ -45,6 +47,8 @@ export default function SearchEngine(props) {
           />
         </form>
         <WeatherData data={weatherData} />
+        <hr />;
+        <WeatherForecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {
