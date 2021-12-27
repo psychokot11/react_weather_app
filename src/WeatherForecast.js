@@ -10,7 +10,6 @@ export default function WeatherForecast(props) {
   function handleResponse(response) {
     setForecastData(response.data.daily);
     setReady(true);
-    console.log(forecastData);
   }
 
   if (ready) {
@@ -19,6 +18,12 @@ export default function WeatherForecast(props) {
         <div className="row">
           <div className="col">
             <OneDayForecast data={forecastData[0]} />
+          </div>
+          <div className="col">
+            <OneDayForecast data={forecastData[1]} />
+          </div>
+          <div className="col">
+            <OneDayForecast data={forecastData[2]} />
           </div>
         </div>
       </div>
