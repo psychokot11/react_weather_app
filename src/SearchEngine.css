@@ -91,3 +91,28 @@ hr {
   max-width: 80%;
   margin: 20px auto -10px;
 }
+
+@media (max-width: 576px) {
+  .left-column {
+    text-align: center;
+  }
+
+  .right-column {
+    text-align: center;
+  }
+
+  .Temperature {
+    font-size: 85px;
+  }
+
+  .Temperature span {
+    font-size: 24px;
+    position: relative;
+    bottom: 40px;
+    margin-left: 8px;
+  }
+
+  .dailyForecast {
+    padding: 0 20px;
+  }
+}
