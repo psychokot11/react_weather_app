@@ -12,6 +12,7 @@ export default function SearchEngine(props) {
       name: response.data.name,
       ready: true,
       icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      iconNumber: response.data.weather[0].icon,
       humidity: Math.round(response.data.main.humidity),
       wind: Math.round(response.data.wind.speed),
       description: response.data.weather[0].description,
