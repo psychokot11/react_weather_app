@@ -3,10 +3,10 @@ import React from "react";
 export default function OneDayForecast(props) {
   function showDay() {
     let date = new Date(props.data.dt * 1000);
-    let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    //let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
     let day = date.getDate();
     return day;
-    console.log(date);
+    //console.log(date);
   }
 
   let icon = `http://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`;
